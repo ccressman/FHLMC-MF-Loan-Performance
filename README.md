@@ -97,10 +97,23 @@ Graphical respresentation of model performance results are below:
 ![image](https://github.com/ccressman/FHLMC-MF-Loan-Performance/assets/119253324/47c26f2c-0f1a-4ad8-ba80-5f1a47625935)
 
 
-MODELING TECHNIQUE THREE: VickyLynn
+MODELING TECHNIQUE THREE: RANDOM FOREST
+We reviewed Random Forest model to predict loan success. Though the model had a 99.4% Accuracy Score it scored low in precision, recall, and f1-score.
+
+The Random Forest model showed 23 - True Positives / 38 - False Positives  / 4 - False Negatives / 6926 - True Negatives. Due to the high False Positives (out weighing the True Positives) we believed the Random Forest model would not be the best model to prejudice loan investment success.  
+
+![Screenshot 2023-05-24 at 7 16 58 PM](https://github.com/ccressman/FHLMC-MF-Loan-Performance/assets/47072092/34cc9cb0-9c49-4b7d-95ea-0d0b5f0c107a)
+
+The 10 most Important Features that were discovered during the Random Forest Model are show. The top 3 making an impact of 20% or more on the model 1.) Debt ratio rate, 2.) Interest rate, 3.)  Loan to value ratio
+
+![Screenshot 2023-05-24 at 7 17 28 PM](https://github.com/ccressman/FHLMC-MF-Loan-Performance/assets/47072092/92214c4c-115f-4881-b7b4-ff470ceb6716)
 
 
-MODELING TECHNIQUE FOUR: VickyLynn
+MODELING TECHNIQUE FOUR: NEURAL NETWORK
+Neural Network was then reviewed with a high Accuracy rate of 99.1% and Loss rate of 4.5% it was discovered that mortgage rate term and fixed to float loans (whether loans were fixed rate or float rate) had the highest correlation in this model.
 
+In the correlation matrix you can see fixed to float loan rate and mortgage term had the strongest correlation when predicting multifamily loan success. It is interesting to note that these to inputs where also in the top ten features for the Random Forest model at 7.7% importance for mortgage term and 3.7% importance for fixed to float loan.
+
+![Screenshot 2023-05-24 at 7 19 58 PM](https://github.com/ccressman/FHLMC-MF-Loan-Performance/assets/47072092/2704ef8a-5ce7-4c41-8a5c-0c17dbf4eb9c)
 
 
