@@ -98,6 +98,7 @@ Graphical respresentation of model performance results are below:
 
 
 MODELING TECHNIQUE THREE: RANDOM FOREST
+
 We reviewed Random Forest model to predict loan success. Though the model had a 99.4% Accuracy Score it scored low in precision, recall, and f1-score.
 
 The Random Forest model showed 23 - True Positives / 38 - False Positives  / 4 - False Negatives / 6926 - True Negatives. Due to the high False Positives (out weighing the True Positives) we believed the Random Forest model would not be the best model to prejudice loan investment success.  
@@ -110,6 +111,7 @@ The 10 most Important Features that were discovered during the Random Forest Mod
 
 
 MODELING TECHNIQUE FOUR: NEURAL NETWORK
+
 Neural Network was then reviewed with a high Accuracy rate of 99.1% and Loss rate of 4.5% it was discovered that mortgage rate term and fixed to float loans (whether loans were fixed rate or float rate) had the highest correlation in this model.
 
 In the correlation matrix you can see fixed to float loan rate and mortgage term had the strongest correlation when predicting multifamily loan success. It is interesting to note that these to inputs where also in the top ten features for the Random Forest model at 7.7% importance for mortgage term and 3.7% importance for fixed to float loan.
