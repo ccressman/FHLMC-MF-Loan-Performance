@@ -61,5 +61,46 @@ Based on the correlation values, it appears that there are no strong correlation
 ![image](https://github.com/ccressman/FHLMC-MF-Loan-Performance/assets/119253324/93a9784f-59a6-4816-8981-80473e6d63ea)
 
 
+MODELING TECHNIQUES USED:
+
+Different modeling techniques used within our project include: 
+
+1. Logistic Regression
+
+2. Histogram-Based Gradient Boosting Model
+
+3. Random Tree Forest
+
+4. Neural Network
+
+
+MODELING TECHNIQUE ONE: LOGISTIC REGRESSION
+The first method we evaluated was logistic regression due to its aptitude for binary classification tasks. However, the results were ultimately underwhelming (cross-validation, accuracy, and balanced accuracy scores were 76%). During this step, we built four different models, which used separate resampling and scaling methods. The highest performing used SMOTE-ENN for resampling and MinMax Scaler. Given the low level of correlation exhibited across features as well as the discrepancies between the coefficient and permutation scores generated for these models, logistic regression does not appear to be the optimal modeling technique to achieve this project's goal.  
+
+
+MODELING TECHNIQUE TWO: HISTOGRAM-BASED GRADIENT BOOSTING
+Data analysis indicates that our features do not maintain a strong linear relationship. This is underlined by the relatively poor performance of our logistic regression models.
+
+A more complex model, like Gradient Boosting Classification (GB), that is able to account for non-linear relationships is therefore a more appropriate model. 
+
+Due to the large size of the dataset being evaluated (>50,000 rows), a histogram-based gradient boosting model was selected over a gradient boosting classifier. Model training is accelerated with this modeling technique by its use of discretizing, or binning, the input features to a few hundred unique values. 
+
+Ultimately, model performance increased significantly. Our highest performing model, which used RandomOverSampler and Standard Scaler, achieved average cross-validation and accuracy scores of 99% and minimized type two error when predicting loan default, which achieves our objective. 
+
+Given the high performance of the model, we took a look at permutation importance, which designates "Interest Rate" as the most important feature, meaning the most influential in predicting performance as calculated by this model. 
+
+Graphical respresentation of model performance results are below: 
+![image](https://github.com/ccressman/FHLMC-MF-Loan-Performance/assets/119253324/9d798fa5-22b6-45f7-8f2e-ddb1963fd3b6)
+
+![image](https://github.com/ccressman/FHLMC-MF-Loan-Performance/assets/119253324/4cf4a1be-be31-4463-8f52-92aaa0ccb368)
+
+![image](https://github.com/ccressman/FHLMC-MF-Loan-Performance/assets/119253324/47c26f2c-0f1a-4ad8-ba80-5f1a47625935)
+
+
+MODELING TECHNIQUE THREE: VickyLynn
+
+
+MODELING TECHNIQUE FOUR: VickyLynn
+
 
 
